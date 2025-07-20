@@ -47,16 +47,53 @@
           <use href="./images/icons.svg#icon-burger-btn"></use>
         </svg></button>
     </div>
-    <div class="mobile-menu">
+    <div class="mobile-menu is-open">
       <div class="container mobile-menu-container">
-        <button class="mobile-menu-close">Close</button>
-        <nav class="mobile-menu-nav">Navigation</nav>
-        <address>Address</address>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+        <button class="close-button" type="button">
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close1"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-nav">
+          <ul class="mob-menu-nav-list">
+            <li class="mob-menu-nav-item">
+              <a href="./index.html" class="mob-menu-header accent">Studio</a>
+            </li>
+            <li class="mob-menu-nav-item">
+              <a href="" class="mob-menu-header">Portfolio</a>
+            </li>
+            <li class="mob-menu-nav-item">
+              <a href="" class="mob-menu-header">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="address-mob-menu">
+          <ul class="address-mob-menu-list">
+            <li class="address-mob-menu-item">
+              <a href="tel:+110001111111" class="contacts-mob-menu-header accent-address">+11 (000) 111-11-11</a>
+            </li>
+            <li class="address-mob-menu-item">
+              <a href="mailto:info@devstudio.com" class="contacts-mob-menu-header">info@devstudio.com</a>
+            </li>
+          </ul>
+        </address>
+        <ul class="socials-list-mob-menu">
+          <li class="socials-list-item"><a href="" class="socials-list-item-a"> <svg class="image-itself" width="24"
+                height="24">
+                <use href="./images/icons.svg#icon-instagram-logo"></use>
+              </svg></a></li>
+          <li class="socials-list-item"><a href="" class="socials-list-item-a"> <svg class="image-itself" width="24"
+                height="24">
+                <use href="./images/icons.svg#icon-twitter-logo"></use>
+              </svg></a></li>
+          <li class="socials-list-item"><a href="" class="socials-list-item-a"> <svg class="image-itself" width="24"
+                height="24">
+                <use href="./images/icons.svg#icon-facebook-logo"></use>
+              </svg></a></li>
+          <li class="socials-list-item"><a href="" class="socials-list-item-a"> <svg class="image-itself" width="24"
+                height="24">
+                <use href="./images/icons.svg#icon-linkedin-logo"></use>
+              </svg></a></li>
         </ul>
       </div>
     </div>
@@ -407,7 +444,7 @@
       </div>
     </div>
   </footer>
-  <div class="modal-overlay is-open hidden">
+  <div class="modal-overlay">
     <div class="modal">
       <button class="close-button" type="button">
         <svg class="close-icon" width="8" height="8">
@@ -452,7 +489,8 @@
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
             </span>
-            I accept the terms and conditions of the <a href="#" class="privacy-link">Privacy Policy</a>
+            <span class="terms-text"> I accept the terms and conditions of the <a href="#" class="privacy-link">Privacy
+                Policy</a> </span>
           </label>
         </div>
         <button type="submit" class="button-form">Send</button>
